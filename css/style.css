@@ -390,22 +390,13 @@ img {
 		align-items: center;
 }
 .time-columns__item {
+		position: relative;
 		width: 14.4859813084%;
 		max-height: 195px;
 		margin-right: 70px;
 }
 .time-columns__item .time-columns__circle:last-child {
 		margin-bottom: 30px;
-}
-.time-columns__item .time-columns__circle:not(.calc)::after {
-		display: block;
-		position: absolute;
-		top: -20px;
-		right: -100px;
-		width: 72px;
-		height: 25px;
-		content: "";
-		background-image: url(/img/02_6.png);
 }
 .time-columns__item:last-child {
 		margin-top: -17px;
@@ -414,8 +405,18 @@ img {
 .time-columns__item:first-child {
 		margin-top: -17px;
 }
+.time-columns__item:not(:last-child)::after {
+		position: absolute;
+		display: block;
+		position: absolute;
+		top: -20px;
+		right: -70px;
+		width: 72px;
+		height: 25px;
+		content: "";
+		background-image: url(/img/02_6.png);
+}
 .time-columns__circle {
-		position: relative;
 		width: 100px;
 		height: 100px;
 		margin: 0 auto;
