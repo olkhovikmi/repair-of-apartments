@@ -499,7 +499,7 @@ img {
 		.time-columns__circle:last-child {
 			margin-bottom: 30px;
 		}
-	
+
 	}
 
 	&__item:last-child {
@@ -511,22 +511,22 @@ img {
 		margin-top: -17px;
 	}
 
-&__item:not(:last-child)::after {
-			position: absolute;
-			display: block;
-			position: absolute;
-			top: -20px;
-			right: -70px;
-			width: 72px;
-			height: 25px;
-			content: "";
+	&__item:not(:last-child)::after {
+		position: absolute;
+		display: block;
+		position: absolute;
+		top: -20px;
+		right: -70px;
+		width: 72px;
+		height: 25px;
+		content: "";
 
-			background-image: url(/img/02_6.png);			
-		
-	} 
+		background-image: url(/img/02_6.png);
+
+	}
 
 
-	&__circle {		
+	&__circle {
 		width: 100px;
 		height: 100px;
 		margin: 0 auto;
@@ -578,4 +578,104 @@ img {
 	background-image: url(/img/02_5.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+}
+
+.page_yellow {
+	background-color: #ffc000;
+}
+
+.wholesale {
+	width: 920px/1170px*100%;
+	margin: 0 auto;
+	padding: 50px 0;
+
+	text-align: center;
+	color: #000000;
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+.sale-columns {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	margin-bottom: 140px;
+
+	&__image {
+		position: relative;
+		margin-right: 30px;
+	}
+
+	&__image:nth-child(2) {
+
+		.sale-columns__text {
+			width: 290px/370px*100%;
+		}
+	}
+
+	&__image:last-child {
+		margin-right: 0;
+
+		.sale-columns__text {
+			width: 288px/370px*100%;
+		}
+	}
+
+	&__text {
+		width: 260px/370px*100%;
+		top: 25px;
+		left: 25px;
+		position: absolute;
+		color: #000000;
+		font-weight: 300;
+		line-height: 1.3em;
+
+		b {
+			font-weight: 700;
+		}
+	}
+}
+
+
+.warranty {
+	width: 700px/1170px*100%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+
+	color: #000000;
+	font-size: 1.9em;
+	font-weight: 700;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.warranty-columns {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+
+
+	&__image {
+		width: 285px/1170px*100%;
+		margin-right: 130px;
+
+	}
+
+	&__image:last-child {
+		margin-right: 0;
+	}
+
+	&__text {
+		margin-top: 40px;
+
+		color: #000000;
+		font-size: 1.1em;
+		font-weight: 300;
+		line-height: 1.2em;
+		text-align: center;
+	}
 }
