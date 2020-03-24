@@ -112,6 +112,26 @@ img {
 
 }
 
+@media (max-width: 320px) {
+	.wrap {
+		max-width: 300px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.header-top__logo {
+		margin-right: 50px;
+	}
+
+	.header-top__contact {
+		display: none;
+	}
+
+	.header-top__btn {
+		min-width: 130px;
+	}
+}
+
 .main {}
 
 .page {
@@ -657,6 +677,7 @@ img {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	align-items: center;
+	margin-bottom: 100px;
 
 
 	&__image {
@@ -677,5 +698,624 @@ img {
 		font-weight: 300;
 		line-height: 1.2em;
 		text-align: center;
+		overflow: auto;
+		text-overflow: ellipsis;
 	}
+}
+
+.job-columns {
+	display: flex;
+}
+
+.job-price {
+	flex-basis: 50%;
+
+	background-color: #ffc000;
+
+	&__box {
+		max-width: 535px;
+		padding: 0 10px;
+		margin: 100px 70px 100px auto;
+	}
+
+	&__title {
+		color: #000000;
+		font-size: 1.35em;
+		font-weight: 700;
+		line-height: 1.5em;
+	}
+
+	&__subtitle {
+		display: block;
+		margin: 50px 0;
+
+		color: #000000;
+		font-weight: 300;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+
+	&__item {
+		margin-bottom: 30px;
+	}
+
+	&__item:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&__number {
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		margin-right: 30px;
+		padding-top: 7px;
+
+		color: #000000;
+		font-size: .9em;
+		font-weight: 700;
+		text-align: center;
+
+		border: 2px solid #000000;
+		border-radius: 50%
+	}
+
+	&__text {
+		display: inline-block;
+
+		color: #000000;
+		font-size: 1.1em;
+		font-weight: 500;
+		vertical-align: middle;
+
+	}
+}
+
+.request {
+	flex-basis: 50%;
+
+	background-image: url(/img/05_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+
+	&__box {
+		max-width: 390px;
+		padding: 0 10px;
+		margin: 100px auto 100px 200px;
+	}
+
+	&__title {
+
+		font-size: 1.35em;
+		font-weight: 700;
+		line-height: 1.5em;
+		text-align: center;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+
+		input {
+			display: block;
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 23px;
+
+			border-radius: 10px;
+			border: 1px solid #dddddd;
+			background-color: #ffffff;
+		}
+
+		input::placeholder {
+			font-size: .9em;
+			font-weight: 300;
+		}
+
+		input:last-of-type {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__form-title {
+		margin: 50px 0;
+
+		text-align: center;
+	}
+
+	&__form-btn {
+		width: 100%;
+		margin-bottom: 30px;
+		padding: 28px 0;
+
+		color: #333333;
+		text-align: center;
+		font-weight: 700;
+		border-radius: 10px;
+		border: none;
+		background-color: #ffd200;
+		cursor: pointer;
+	}
+
+	&__form-subtitle {
+		color: #333333;
+		text-align: center;
+		font-size: .9em;
+	}
+}
+
+@media (max-width: 320px) {
+	.wrap {
+		max-width: 300px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.key-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.key {
+		width: 100%;
+
+		&__title {
+			margin-top: 0;
+			color: #333333;
+			font-size: 1.45em;
+			font-weight: 700;
+			line-height: 1em;
+		}
+
+		&__subtitle {
+			width: 190px/270px*100%;
+			margin-top: 13px;
+
+			line-height: 1em;
+		}
+
+		&__list {
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+
+		&__item {
+			width: 215px/270px*100%;
+			padding-left: 15px;
+
+			font-size: 0.75em;
+		}
+
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+	}
+
+	.free {
+		max-width: 300px;
+		margin: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		&__text {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 20px;
+
+
+			font-size: 1.12em;
+			font-weight: 700;
+			line-height: 1.2em;
+		}
+
+		&__subtext {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 25px;
+
+			font-size: .9em;
+			font-weight: 300;
+		}
+
+		&__form {
+			input {
+				min-width: 270px;
+			}
+		}
+
+		&__form-text {}
+
+		&__form-btn {
+			min-width: 270px;
+			padding: 20px 50px;
+
+
+			font-size: .9em;
+			font-weight: 700;
+			text-align: center;
+		}
+
+		&__call {
+			display: felx;
+			flex-direction: column;
+		}
+
+		&__call-left {
+			width: 100%;
+		}
+
+		&__call-right {
+			width: 100%;
+		}
+	}
+
+	.kitchen {
+		display: none;
+	}
+
+	.job {
+
+		&__title {
+
+			font-size: 1.1em;
+			font-weight: 700;
+		}
+	}
+
+	.job-slider {
+
+		&__image {
+
+			img:nth-of-type(2),
+			img:nth-of-type(3) {
+				display: none;
+			}
+		}
+	}
+
+	.sale {
+
+		&__title {
+			width: 100%;
+
+			font-size: 1.1em;
+			font-weight: 700;
+			line-height: 1.2em;
+		}
+
+		&__subtitle {
+			font-size: 1.9em;
+			font-weight: 100;
+
+		}
+
+		.repairs-columns {
+			display: flex;
+			flex-direction: column;
+
+			&__item {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 30px;
+			}
+
+			&__item:last-of-type {
+				margin-bottom: 0;
+			}
+
+			&__title {}
+
+			&__link {
+				width: 40%;
+
+				text-align: center;
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+	.time {
+		width: 100%;
+		max-width: 300px;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		&__title {
+			width: 100%;
+
+			font-size: 1.1em;
+			font-weight: 700;
+		}
+
+		&__step {
+			font-size: .9em;
+			font-weight: 100;
+
+		}
+	}
+
+	.time-columns {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+
+		&__item {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 30px;
+
+			text-align: center;
+		}
+
+		&__item:last-of-type {
+			margin-bottom: 0;
+		}
+
+		.time-columns__item::after {
+			display: none;
+		}
+	}
+
+	.wholesale {
+		font-size: 1.1em;
+		font-weight: 300;
+	}
+
+	.sale-columns {
+		display: flex;
+		flex-direction: column;
+
+		&__image {
+			margin: 0;
+			margin-bottom: 30px;
+		}
+
+		&__image:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.warranty {
+		width: 100%;
+
+		font-size: 1.1em;
+		font-weight: 700;
+	}
+
+	.warranty-columns {
+		display: flex;
+		flex-direction: column;
+
+		&__image {
+			width: 100%;
+			margin: 0;
+			margin-bottom: 30px;
+
+			text-align: center;
+		}
+
+		&__image:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.job-columns {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.job-price {
+
+		&__box {
+			width: 100%;
+			max-width: 300px;
+			margin: 50px auto;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		&__title {
+			font-size: .9em;
+			font-weight: 700;
+		}
+
+		&__subtitle {
+			font-size: .9em;
+			font-weight: 300;
+		}
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+		}
+
+
+		&__number {
+			margin-right: 8px;
+
+			font-size: .9em;
+			font-weight: 500;
+		}
+
+		&__text {
+			font-size: .65em;
+			font-weight: 500;
+
+		}
+	}
+
+	.request {
+
+		&__box {
+			width: 100%;
+			max-width: 300px;
+			margin: 50px auto;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+	}
+}
+
+
+
+
+
+
+
+.address {
+	display: flex;
+
+
+	&__map {
+		flex-basis: 50%;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__contant {
+		flex-basis: 50%;
+	}
+
+	&__title {
+		margin-bottom: 50px;
+
+		color: #000000;
+		text-align: left;
+		font-size: 1.2em;
+		font-weight: 700;
+		line-height: 1.5em;
+	}
+
+	span {
+		position: relative;
+		display: block;
+		margin-left: 20px;
+		padding-left: 25px;
+
+		color: #000000;
+		text-align: left;
+		font-weight: 700;
+		line-height: 1.3em;
+	}
+
+	&__city {
+		width: 165px;
+		margin-bottom: 30px;
+	}
+
+	&__city::before {
+		position: absolute;
+		top: 5px;
+		left: -20px;
+		display: block;
+		content: "";
+		width: 20px;
+		height: 20px;
+
+		background-image: url(/img/map.svg);
+		background-repeat: no-repeat;
+	}
+
+	&__time {
+		width: 145px;
+		margin-bottom: 30px;
+	}
+
+	&__time::before {
+		position: absolute;
+		top: 5px;
+		left: -20px;
+		display: block;
+		content: "";
+		width: 20px;
+		height: 20px;
+
+		background-image: url(/img/clock-with-white-face.svg);
+		background-repeat: no-repeat;
+	}
+
+	&__phone {
+		width: 170px;
+	}
+
+	&__phone::before {
+		position: absolute;
+		top: 5px;
+		left: -20px;
+		display: block;
+		content: "";
+		width: 20px;
+		height: 20px;
+
+		background-image: url(/img/phone-call-button.svg);
+		background-repeat: no-repeat;
+	}
+}
+
+.address-box {
+	max-width: 300px;
+	margin: 100px auto 100px 200px;
+}
+
+
+@media (max-width: 320px) {
+	.address {
+		display: flex;
+		flex-direction: column-reverse;
+
+
+		&__map {
+			max-width: 300px;
+			margin-top: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		&__contant {
+			width: 100%;
+		}
+
+		&__title {
+
+			font-size: 1.1em;
+			font-weight: 700;
+		}
+
+	}
+
+	.address-box {
+		width: 100%;
+		max-width: 300px;
+		margin: 0;
+		margin-top: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 }
